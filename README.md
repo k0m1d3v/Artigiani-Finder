@@ -12,7 +12,7 @@ Admin panel per gestire professionisti artigiani, città e professioni. Permette
 2) Importa lo schema SQL (vedi sezione "Modello logico").
 3) Avvia il server PHP/Apache e apri `index.php` nel browser.
 
-## Modello E/R (descrizione grafica)
+## Modello E/R
 - **Entità**: `citta`, `professione`, `professionista`.
 - **Associazione molti-a-molti**: `professionista_professione` collega `professionista` a `professione`.
 - **Cardinalità**:
@@ -21,7 +21,7 @@ Admin panel per gestire professionisti artigiani, città e professioni. Permette
 <img width="621" height="352" alt="modello logico" src="https://github.com/user-attachments/assets/f443f79d-6d22-4519-bdd3-5807c4951586" />
 
 
-### Diagramma (testuale)
+### Diagramma
 ```
 citta (1) ───< professionista >───< (N) professionista_professione >─── (N) professione
 ```
@@ -38,6 +38,7 @@ citta (1) ───< professionista >───< (N) professionista_professione >
 - Associazione di una o più professioni al professionista.
 - Filtri per professione, città, tariffa massima e disponibilità.
 - Eliminazione di un professionista (con cleanup delle associazioni).
+
 
 
 
